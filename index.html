@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aplikasi Informasi Sepak Bola" />
+    <meta
+      name="keyword"
+      content="pwa, progresive web apps, submission, dicoding"
+    />
+    <meta name="author" content="Rodericus Ifo Krista" />
+    <meta name="theme-color" content="#90CAF9" />
+    <link rel="apple-touch-icon" href="/icon-512x512.png" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/manifestFCM.json" />
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/icon-512x512.png" />
+    <link rel="shortcut icon" href="/icon-192x192.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>UEFA CHAMPIONS LEAGUE</title>
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav id="navigation" role="navigation">
+      <div class="nav-wrapper container">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo" id="logo-football"
+          ><span class="highlight-title">CHAMPIONS</span>&nbsp;LEAGUE</a
+        >
+
+        <!-- Topnav -->
+        <ul class="topnav right hide-on-med-and-down"></ul>
+
+        <!-- Sidenav -->
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">&#9776;</a>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div id="body-content"></div>
+
+    <div id="loader"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>UEFA CHAMPIONS LEAGUE, Copyright &copy; 2020</p>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/idb.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

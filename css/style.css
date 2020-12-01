@@ -1,0 +1,236 @@
+/* Global */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.highlight-title {
+  color: skyblue;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* Navigation */
+nav#navigation {
+  background-color: black;
+
+  min-height: 75px;
+
+  border-bottom: 3px skyblue solid;
+}
+
+nav#navigation a:hover {
+  font-weight: bold;
+  color: skyblue;
+}
+
+nav#navigation a#logo-football:hover {
+  font-weight: inherit;
+  color: unset;
+}
+
+/* Showcase */
+section#home-showcase {
+  background: url("/img/UEFA-Champions-League-Logo-Background.jpg") 0 0
+    no-repeat;
+  min-height: 750px;
+  width: 100%;
+}
+
+/* League Information -- Wrapper */
+div#home-wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 2.5px;
+}
+
+div#home-wrapper div#home-box {
+  margin: 10px;
+}
+
+div#home-wrapper div.card-content h3 {
+  margin: 0 0 20px 0;
+}
+
+/* Standings */
+div#standings .card {
+  margin: 10px;
+  padding: 0 20px 20px 20px;
+}
+
+/* Teams */
+div#teams {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 20px;
+  margin: 0 10px;
+}
+
+div#teams div.card {
+  padding: 20px;
+}
+
+div#teams p {
+  text-align: center;
+}
+
+/* Team */
+div#wrapper {
+  margin: 20px;
+}
+
+div.team {
+  margin: 20px 20px 0 20px;
+  padding: 30px 30px 0 30px;
+}
+
+div.team div#team-title p {
+  font-size: 20px;
+}
+
+div.team div#team-info {
+  margin-top: 30px;
+}
+
+div.team1 {
+  margin: 0 20px;
+  padding: 0 30px;
+}
+
+/* Teams Saved */
+div#teams-saved {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 20px;
+  margin: 0 10px;
+}
+
+div#teams-saved div.card {
+  padding: 20px;
+}
+
+div#teams-saved p {
+  text-align: center;
+}
+
+/* Block Info */
+section.block-info {
+  background-color: black;
+  color: white;
+  text-align: center;
+  min-height: 50px;
+}
+
+section.block-info h2 {
+  font-size: 25px;
+  margin: 20px;
+}
+
+/* Footer */
+footer.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  min-height: 75px;
+}
+
+footer.footer p {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Preloader */
+div#loader {
+  margin-top: 50%;
+  margin-bottom: 50%;
+  display: none;
+}
+
+/* Modal (Pop Up) */
+div.modal {
+  max-height: 200px;
+}
+
+/* Queries */
+@media (max-width: 425px) {
+  nav#navigation a#logo-football {
+    font-size: 1.75em;
+    margin-left: 10px;
+  }
+
+  nav#navigation div.nav-wrapper {
+    padding-top: 5px;
+  }
+
+  section#home-showcase {
+    min-height: 240px;
+    background-position: center;
+    background-size: 425px;
+  }
+
+  section.block-info h2 {
+    font-size: 1.75em;
+  }
+
+  footer.footer p {
+    font-size: 1.75em;
+  }
+
+  @media (max-width: 375px) {
+    nav#navigation a#logo-football {
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+
+    nav#navigation div.nav-wrapper {
+      padding-top: 5px;
+    }
+
+    section#home-showcase {
+      min-height: 210px;
+      background-position: center;
+      background-size: 375px;
+    }
+
+    section.block-info h2 {
+      font-size: 1.5em;
+    }
+
+    footer.footer p {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: 320px) {
+      nav#navigation a#logo-football {
+        font-size: 1.25em;
+        margin-left: 10px;
+      }
+
+      nav#navigation div.nav-wrapper {
+        padding-top: 5px;
+      }
+
+      section#home-showcase {
+        min-height: 180px;
+        background-position: center;
+        background-size: 320px;
+      }
+
+      section.block-info h2 {
+        font-size: 1.25em;
+      }
+
+      footer.footer p {
+        font-size: 1.25em;
+      }
+    }
+  }
+}
